@@ -5,6 +5,13 @@ prisoners_dilemma = {
     ("D", "D"): (1, 1),
 }
 
+
+
+# A function play_game(strategy1, strategy2, rounds, game) that takes two strategies, the
+# number of rounds to play, and a specification of the game (what the payoffs are for each
+# combination of moves). It should return the total score for each player after all rounds have been
+# played.
+
 def play_game(strategy1, strategy2, rounds, game):
     """Play `rounds` rounds and return the total score of each player."""
     history1 = []  # player 1's moves so far
@@ -13,7 +20,17 @@ def play_game(strategy1, strategy2, rounds, game):
     score2 = 0
     for round_number in range(rounds):
         # 1. ask each strategy for its next move
+        move1 = strategy1(history1, history2)
+        move2 = strategy2(history2, history1)
         # 2. look up both payoffs in game
+        payoff1, payoff2 = game[(move1, move2)]
         # 3. add the payoffs to the scores
-    .append(...)    # 4. add the moves to the histories
+        score1 += payoff1
+        score2 += payoff2
+        # 4. add the moves to the histories
+        history1.append(move1)
+        history2.append(move2)
     return score1, score2
+
+
+#   Run at least two games (in a reproducible way) and record the results in comments.  
