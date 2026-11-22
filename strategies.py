@@ -5,6 +5,10 @@
 # to cooperate on the first move, and then to play the move that would have given the opponent the
 # highest score in the previous round (the “best response” strategy).
 
+import random
+def random_choice(my_history, opponent_history):
+    return random.choice(["C", "D"])
+
 def always_cooperate(my_history, opponent_history):
     return "C" 
 
