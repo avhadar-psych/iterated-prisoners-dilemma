@@ -29,6 +29,3 @@ def play_game(strategy1, strategy2, rounds, game):
         history1.append(move1)
         history2.append(move2)
     return score1, score2
-
-
-#   Run at least two games (in a reproducible way) and record the results in comments.  
