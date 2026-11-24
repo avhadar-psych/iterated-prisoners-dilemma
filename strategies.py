@@ -4,6 +4,7 @@
 import random
 
 def random_choice(my_history, opponent_history):
+    """Choose "C" or "D" at random."""
     return random.choice(["C", "D"])
 
 def always_cooperate(my_history, opponent_history):

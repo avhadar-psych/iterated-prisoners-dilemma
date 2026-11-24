@@ -1,13 +1,13 @@
 # The game itself: payoff tables and the function that plays a game between two strategies.
 
 # Prisoner's dilemma payoffs: (player 1 move, player 2 move) -> (player 1 payoff, player 2 payoff)
+# # "C" = cooperate, "D" = defect
 prisoners_dilemma = {
     ("C", "C"): (3, 3),
     ("C", "D"): (0, 5),
     ("D", "C"): (5, 0),
     ("D", "D"): (1, 1),
 }
-# "C" = cooperate, "D" = defect
 
 
 def play_game(strategy1, strategy2, rounds, game):
