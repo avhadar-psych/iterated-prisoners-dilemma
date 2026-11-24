@@ -1,4 +1,4 @@
-# A set of tests that demonstrate that your functions work as expected.
+# Tests for the strategies
 
 from strategies import always_cooperate, always_defect, tit_for_tat
 

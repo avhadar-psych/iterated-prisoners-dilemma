@@ -1,16 +1,14 @@
+# The game itself: payoff tables and the function that plays a game between two strategies.
+
+# Prisoner's dilemma payoffs: (player 1 move, player 2 move) -> (player 1 payoff, player 2 payoff)
 prisoners_dilemma = {
     ("C", "C"): (3, 3),
     ("C", "D"): (0, 5),
     ("D", "C"): (5, 0),
     ("D", "D"): (1, 1),
 }
+# "C" = cooperate, "D" = defect
 
-
-
-# A function play_game(strategy1, strategy2, rounds, game) that takes two strategies, the
-# number of rounds to play, and a specification of the game (what the payoffs are for each
-# combination of moves). It should return the total score for each player after all rounds have been
-# played.
 
 def play_game(strategy1, strategy2, rounds, game):
     """Play `rounds` rounds and return the total score of each player."""

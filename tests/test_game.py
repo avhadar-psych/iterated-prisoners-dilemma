@@ -1,7 +1,7 @@
-# A set of tests that demonstrate that your functions work as expected.
+# Tests for play_game
 
 from game import play_game, prisoners_dilemma
-from strategies import always_cooperate, always_defect, tit_for_tat, random_choice
+from strategies import always_cooperate, always_defect
 
 
 def test_two_cooperators_get_3_points_each_round():
