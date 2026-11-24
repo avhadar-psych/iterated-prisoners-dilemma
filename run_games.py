@@ -1,3 +1,5 @@
+# Runs example games between the strategies. Results are recorded in comments below each game.
+
 import random
 from game import play_game, prisoners_dilemma
 from strategies import (tit_for_tat, random_choice, always_cooperate, always_defect)
@@ -23,16 +25,3 @@ print(play_game(always_cooperate, always_defect, 500000, prisoners_dilemma))
 # Game 5: always_cooperate vs tit_for_tat
 print(play_game(always_cooperate, tit_for_tat, 500000, prisoners_dilemma))
 # Result: (1500000, 1500000)
-
-
-
-
-
-
-
-
-
-
-
-
-
